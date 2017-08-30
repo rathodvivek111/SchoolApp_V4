@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center"
+    android:paddingBottom="50dp"
+    android:paddingTop="50dp"
+    tools:context="com.example.rathods.schoolapp_v4.Login">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:foregroundGravity="center"
+        android:padding="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:contentPadding="20dp"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="98dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    app:srcCompat="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/TV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="@string/welcome"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                    tools:ignore="RtlHardcoded" />
+
+
+                <EditText
+                    android:id="@+id/Et_Mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:autoText="true"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:hint="@string/number"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:singleLine="true"
+                    android:textAlignment="center" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioTeacher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:text="@string/teacher"
+                        tools:ignore="RtlHardcoded" />
+
+                    <RadioButton
+                        android:id="@+id/radioParent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:text="@string/parent"
+                        tools:ignore="RtlHardcoded" />
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/Btn_Login"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="50dp"
+                    android:text="@string/login" />
+
+
+                <com.digits.sdk.android.DigitsAuthButton
+                    android:id="@+id/auth_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

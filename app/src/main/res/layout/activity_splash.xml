@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context="com.example.rathods.schoolapp_v4.Splash"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="358dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_weight="0.13"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/logo"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="53dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="School App"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:layout_editor_absoluteX="90dp" />
+</LinearLayout>
